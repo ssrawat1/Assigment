@@ -77,7 +77,6 @@ export const Assessment = () => {
 
   return (
     <div className="assessment-container">
-      <h1>ARE YOU DISILLUSIONED?</h1>
       <div className="progress-bar">
         <div
           className="progress"
@@ -107,11 +106,11 @@ export const Assessment = () => {
         </div>
       </div>
       <div className="navigation-buttons">
-      <button onClick={handlePrev} disabled={currentQuestion === 0}>
-          &lt; PREV
+      <button onClick={handlePrev} >
+      ← PREV
         </button>
-        <button onClick={handleNext} disabled={currentQuestion >= maxQuestionReached}>
-          NEXT &gt;
+        <button onClick={handleNext} >
+          NEXT →
         </button>      </div>
     </div>
   );
